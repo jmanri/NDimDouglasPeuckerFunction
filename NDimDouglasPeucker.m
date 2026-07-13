@@ -47,15 +47,15 @@ if dNode < 1e-10
     posreduced = A; % If A == B, no simplification is possible
 return;
 end
-% Perpendicular distances from each point to line AB
+% Orthogonal distances from each point to line AB
 d = zeros(n-2,1);  % Initialize distance vector
 for k = 2:n-1
     P = ptList(k,:);
     AP = P - A;
 % Projection of AP onto AB
     proj = dot(AP, AB) / dot(AB, AB) * AB;
-    perpVec = AP - proj; % Vector perpendicular to the line
-    d(k-1) = norm(perpVec); % Perpendicular distance
+    perpVec = AP - proj; % Vector to the line
+    d(k-1) = norm(perpVec); % Orthogonal distance
 end
 % Index of the farthest point
 [~, farthestIdx] = max(d);
