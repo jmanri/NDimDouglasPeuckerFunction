@@ -2,6 +2,8 @@
 
 MATLAB implementation of the **N-Dimensional Douglas-Peucker algorithm** for reducing/simplifying a list of points in any number of dimensions (2D, 3D, or higher), while preserving the overall shape of the trajectory within a given tolerance.
 
+[![View N-Dimensional Douglas-Peucker algorithm on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://es.mathworks.com/matlabcentral/fileexchange/184240-n-dimensional-douglas-peucker-algorithm)
+
 ## Description
 
 The classic Douglas-Peucker algorithm is widely used to simplify 2D curves (e.g., GPS tracks, polylines) by removing points that do not significantly contribute to the shape of the curve. This implementation generalizes the algorithm to work with points of **arbitrary dimensionality**, making it suitable for applications such as:
